@@ -106,18 +106,18 @@
           <div class="col-md-6 mb-3">
             <div class="card">
               <div class="card-body" id="feed1">
-              	<h2 class="card-title" id="feed-title-1">Title Article</h2>
-                <p class="card-text" id="feed-summary-1">Summary Content</p>
-                <p class="card-text"><small class="text-muted" id="feed-publish-1">Tanggal Upload</small></p>
+              	<h2 class="card-title" id="feed-title-1"></h2>
+                <p class="card-text" id="feed-summary-1"></p>
+                <p class="card-text"><small class="text-muted" id="feed-publish-1"></small></p>
               </div>
             </div>
           </div>
           <div class="col-md-6 mb-3">
             <div class="card">
               <div class="card-body" id="feed2">
-              	<h2 class="card-title" id="feed-title-2">Title Article</h2>
-                <p class="card-text" id="feed-summary-2">Summary Content</p>
-                <p class="card-text"><small class="text-muted" id="feed-publish-2">Tanggal Upload</small></p>
+              	<h2 class="card-title" id="feed-title-2"></h2>
+                <p class="card-text" id="feed-summary-2"></p>
+                <p class="card-text"><small class="text-muted" id="feed-publish-2"></small></p>
               </div>
             </div>
           </div>
@@ -175,6 +175,15 @@
     		document.getElementById('feed-title-2').innerText = this.response.feed.entry[1].title.$t;
     		document.getElementById('feed-summary-1').innerText = this.response.feed.entry[0].summary.$t;
     		document.getElementById('feed-summary-2').innerText = this.response.feed.entry[1].summary.$t;
+    		document.getElementById('feed-publish-1').innerText = this.response.feed.entry[0].published.$t;
+    		document.getElementById('feed-publish-2').innerText = this.response.feed.entry[1].published.$t;
+    	}
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  </body>
+</html>summary-2').innerText = this.response.feed.entry[1].summary.$t;
     		document.getElementById('feed-publish-1').innerText = this.response.feed.entry[0].published.$t;
     		document.getElementById('feed-publish-2').innerText = this.response.feed.entry[1].published.$t;
     	}
