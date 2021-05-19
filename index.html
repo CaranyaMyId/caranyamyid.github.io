@@ -161,7 +161,8 @@
     <!-- Akhir Footer -->
 
     <script type="text/javascript">
-    	var year = Date("Y");
+    	var date = new Date();
+    	var year = date.getFullYear();
     	document.getElementById('tahun').innerText = year;
     </script>
 
@@ -176,18 +177,6 @@
     		document.getElementById('feed-summary-2').innerText = this.response.feed.entry[1].summary.$t;
     		document.getElementById('feed-publish-1').innerText = this.response.feed.entry[0].published.$t;
     		document.getElementById('feed-publish-2').innerText = this.response.feed.entry[1].published.$t;
-
-    	var a1 = document.createElement('a');
-    	a1.href = this.response.feed.entry[0].link[4].href;
-			a1.className = 'btn btn-primary';
-			a1.textContent = 'Selengkapnya';
-			document.querySelector('#feed1').appendChild(a1);
-
-			var a2 = document.createElement('a');
-    	a2.href = this.response.feed.entry[0].link[4].href;
-			a2.className = 'btn btn-primary';
-			a2.textContent = 'Selengkapnya';
-			document.querySelector('#feed2').appendChild(a2);
     	}
     </script>
 
