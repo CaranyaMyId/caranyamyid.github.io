@@ -1,3 +1,2 @@
-# caranyamyid.github.io
-Github Page Caranya My Id
+# Github Page
 [Caranya My Id](https://caranya.my.id)
